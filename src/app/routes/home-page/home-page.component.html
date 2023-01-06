@@ -1,0 +1,89 @@
+<div class="container-fluid" style="padding: 0px;">
+    <app-header style="position: absolute; height: 118px;width:50%"></app-header>
+    <div class="row homepage">
+        <!-- <app-header style="position: absolute;"></app-header> -->
+        <div class="col-md-6 left">
+            <div class="Formpage">
+                <div class="text">
+                    <p>Welcome</p>
+                    <h1>Login</h1>
+                </div>
+                <div class="formbox">
+                    <div class="inputbox">
+                        <div class="email">
+                            <form [formGroup]="loginForm" (ngSubmit)="loginUser()">
+                            Email <br>
+                            <input type="text" class="form-control" placeholder="user@example.com" formControlName="user">
+                            <br>
+                            <span style="color: red;font-size: 14px;" *ngIf="user && user.invalid && user.touched"><fa-icon class="erroricon" [icon]="error"></fa-icon> Invalid Username</span>
+                            </form>
+                            
+                        </div>
+                        <div class="password">
+                            <form [formGroup]="loginForm" (ngSubmit)="loginUser()">Password <br>
+                            <input type="password" class="form-control" placeholder="Enter Password" formControlName="password">
+                            <br> 
+                            <!-- <span class="eyeicon"><fa-icon class="eyeicon" [icon]="eye"></fa-icon></span> -->
+                            <span style="color: red;font-size: 14px;" *ngIf="password && password.invalid && password.touched">Invalid password</span>
+                            </form>
+                        </div>
+                        <!-- <i class="fa-light fa-eye"></i> -->
+                    </div>
+                
+                    <div class="row bottom">
+                        <div class="col check">
+                            <input class="checkbox" type="checkbox" value="Remember me" id="rememberMe"  >
+                            <label for="rememberMe"></label>
+                            <p>Remember me</p>
+                        </div>
+                        <div class="col forgot">
+                            <ul>
+                                <li><a routerLink="/" style="text-decoration: none; ">Forgot Password?</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="subbutton">
+                    <input type="submit" value="Login">  
+                </div>   
+            </div>    
+        </div>
+
+        <div class="col-md-6 right">
+            <div class="infobox">
+                <span>Sit amet bibendum erat tempor. Nullam facilisis ac est feugiat porttitor</span>
+                <p>Sit amet bibendum erat tempor. Nullam facilisis ac est feugiat porttitor, lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <!-- <div class="icons">
+                    <img src="../assets/icons/1164452_instagram_logo_new logo_photo_social_icon.png" alt="instagram">
+                    <img src="../assets/icons/1298738_facebook_brand_fb_logo_social media_icon.png" alt="facebook">
+                    <img src="../assets/icons/104501_twitter_bird_icon.png" alt="twwitter">
+                    <img src="../assets/icons/2986200_linkdin_logo_media_social_icon.png" alt="linkdin">
+                    <fa-icon class="insta" [icon]="insta"></fa-icon>
+                    <fa-icon class="facebook" [icon]="facebook"></fa-icon>
+                    <fa-icon class="twitter" [icon]="twitter"></fa-icon>
+                    <fa-icon class="linkedin" [icon]="linkedin"></fa-icon>
+                </div> -->
+                <div class="iconsrow">
+                    <div class="icon">
+                        <a href="https://www.instagram.com/"></a>
+                        <fa-icon class="icon" [icon]="insta"></fa-icon>
+                    </div>
+                    <div class="icon">
+                        <a href="https://www.facebook.com/campaign/landing.php?campaign_id=14884913640&extra_1=s%7Cc%7C550525804944%7Cb%7Cfacebook%20%27%7C&placement=&creative=550525804944&keyword=facebook%20%27&partner_id=googlesem&extra_2=campaignid%3D14884913640%26adgroupid%3D128696220912%26matchtype%3Db%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-327195741349%26loc_physical_ms%3D9301900%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=Cj0KCQiA5NSdBhDfARIsALzs2EBYbOO39RZbMGs467uO-N1y50k16kdoNGR15aQA7_PN-vCTHoCik4IaAq6jEALw_wcB"></a>
+                        <fa-icon class="icon" [icon]="facebook"></fa-icon>
+                    </div>
+                    <div class="icon">
+                        <a href="https://twitter.com/login"></a>
+                        <fa-icon class="icon" [icon]="twitter"></fa-icon>
+                    </div>
+                    <div class="icon">
+                        <a href="https://www.linkedin.com/feed/?trk=sem-ga_campid.14650114791_asid.127961666580_crid.545833659352_kw.linkedin_d.c_tid.kwd-285981853_n.g_mt.p_geo.9301900"></a>
+                        <fa-icon class="icon" [icon]="linkedin" style="height: 24px;"></fa-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <app-footer></app-footer>
+</div>

@@ -1,0 +1,288 @@
+.homepage{
+    height: 100%;
+    display: flex;
+    background-image: url(../../../assets/Images/Rbgimage.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    background-size: 50%;
+    background-attachment: fixed;
+}
+.left {
+    margin-top: 81px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Formpage{
+    height: 437px;
+    width: 470px;
+    margin-top: 81px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.text{
+    height: 81px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.text p{
+    color: #6B7280;
+    font-size: 15px;
+    font-family: poppins;
+    margin: 0px;
+}
+.text h1{
+    font-size: 34px;
+    font-family: poppins2;
+}
+.formbox{
+    height: 227px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+.inputbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 182px;
+}
+.inputbox input{
+    width: 100%;
+}
+.email{
+    position: relative;
+}
+.email  ::placeholder{
+    color: #000000;
+    opacity: 1;
+    font-size: 16px;
+}
+.email form{
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #062C3A;
+    height: 92px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.erroricon{
+    position: absolute;
+    right: 0px;
+    top: 32px;
+    font-size: larger;
+}
+.email form input[type="text"], select.form-control {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #D0D0D0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 10px 0px 0px 0px;
+    width: 100%;
+}  
+.email form input[type="text"]:focus,select.form-control:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.password{
+    height: 70px;
+}
+.password form{
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color:#062C3A;    ;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.password ::placeholder{
+    color: #6B7280;
+    opacity: 1;
+    font-size: 16px;
+}
+.password{
+    position: relative;
+}
+.password form input[type="password"], select.form-control {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #D0D0D0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 10px 0px 0px 0px;
+    width: 100%;
+}  
+.password form input[type="password"]:focus,select.form-control:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.eyeicon{
+    position: absolute;
+    right: 0px;
+    top: 14px;
+    font-size: large;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.check{
+    height: 21px;
+    display: flex;
+    flex-direction: row;
+
+}
+input[id="rememberMe"] + label {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    cursor: pointer;     
+    background: #FFFFFF;
+    border: 1px solid #EFEFEF;
+    border-radius: 6px;
+}
+input[id="rememberMe"]:checked + label:after {
+    position: relative;
+    top: -4px;
+    left: 2px;
+    content: '\2714';
+    font-size: 14px;
+  }
+input[id="rememberMe"] {
+    display: none;
+  }
+
+.check p{
+    padding-left: 16px;
+    font-size: 14px;
+    color: #062C3A;
+    font-family: poppins;
+}
+.bottom  ul{
+    color: #7B17C1;
+    font-family: poppins;
+    margin: 0px;
+}
+.forgot{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px;
+    padding: 0px;
+}
+.forgot ul li{
+    list-style-type: none;
+    font-size: 14px;
+}
+.subbutton input{
+    width: 200px;
+    height: 49px;  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 24px;
+    gap: 8px;
+    background: linear-gradient(90deg, #9F1EFB 0%, #7A17BF 100%), #000000;
+    border-radius: 40px;
+    border: none;
+    color: #FFFFFF;
+}
+.infobox{
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 400px;
+    height: 260px;
+}
+.infobox span{
+    font-family: Poppins2;
+    font-size: 24px;
+}
+.infobox p{
+    font-family: poppins;
+}
+.iconsrow{
+    height: 24px;
+    width: 240px;
+    display: flex;
+    justify-content: space-between;
+}
+.icon{
+    font-size: 24px;
+    height: 24px;
+}
+@media only screen and (max-width:1300px){
+    .text{
+        align-items: center;
+    }
+    .Formpage{
+        margin: 0px;
+    }
+}
+
+@media only screen and (max-width:1000px){
+    .Formpage{
+        padding-left: 10px;
+        display: flex;
+        align-items: center;
+    }
+    .Formpage form{
+        display: flex;
+        flex-direction: column;
+        align-content: center !important;
+    }
+    .formbox{
+        width: 100%;
+        padding: 15px;
+    }
+}
+@media only screen and (max-width:800px){
+   .homepage{
+        background-image: none;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        flex-wrap: nowrap;
+        justify-content: center;
+        height: 100%;
+   }
+   .right{
+        width: 100%;
+        background-image: url(../../../assets/Images/Rbgimage.png);
+        height: 500px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+   }
+   .infobox{
+        width: 80%;
+   }
+   .left{
+        border: 2px solid black;
+        padding: 10px;
+    }
+}

@@ -30,7 +30,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "/Ganesh/Angular Project/Soft-Chaos/node_modules/font-awesome/css/font-awesome.min.css"
             ],
             "scripts": []
           },
@@ -93,12 +95,17 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "/Ganesh/Angular Project/Soft-Chaos/node_modules/font-awesome/css/font-awesome.min.css"
             ],
             "scripts": []
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
